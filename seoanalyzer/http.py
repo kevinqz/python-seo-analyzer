@@ -5,7 +5,7 @@ from urllib3 import Timeout
 
 class Http():
     def __init__(self):
-        user_agent = {'User-Agent': 'Mozilla/5.0'}
+        user_agent = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'}
         self.http = PoolManager(
             timeout=Timeout(connect=1.0, read=2.0),
             cert_reqs='CERT_REQUIRED',
